@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Conocenos() {
+export function Conocenos() {
   return (
     <div>Conocenos</div>
   )
 }
-
-export default Conocenos

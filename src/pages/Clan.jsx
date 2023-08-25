@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Clan() {
+export function Clan() {
   return (
     <div>Clan</div>
   )
 }
-
-export default Clan

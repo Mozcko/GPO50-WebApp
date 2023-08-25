@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Tropa() {
+export function Tropa() {
   return (
     <div>Tropa</div>
   )
 }
-
-export default Tropa

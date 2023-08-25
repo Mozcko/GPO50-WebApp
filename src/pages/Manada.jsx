@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Manada() {
+export function Manada() {
   return (
     <div>Manada</div>
   )
 }
-
-export default Manada

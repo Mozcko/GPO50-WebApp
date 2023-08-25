@@ -5,5 +5,15 @@ import { AboutUs } from "./AboutUs";
 import { Contacto } from "./Contacto";
 import { Encuentranos } from "./Encuentranos";
 import { Conocenos } from "./Conocenos";
+import { Footer } from "./Footer";
 
-export { Hero, Navbar, Secciones };
+export { 
+    Hero, 
+    Navbar, 
+    Secciones, 
+    AboutUs, 
+    Contacto, 
+    Encuentranos, 
+    Conocenos,
+    Footer,
+};

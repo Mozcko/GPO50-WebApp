@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Secciones() {
+export function Secciones() {
   return (
     <div>Secciones</div>
   )
 }
-
-export default Secciones
