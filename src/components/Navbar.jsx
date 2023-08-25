@@ -1,7 +1,73 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { styles } from "../styles";
+import { navLinks } from "../constants";
+import { logo, menu, close } from "../assets";
 
 export function Navbar() {
+
+  const [toggle, setToggle] = useState(false);
+
   return (
-    <div>Navbar</div>
-  )
+    <nav
+      className={` w-full flex items-start py-5 fixed top-0 z-20 bg-gradient-to-r from-violet-600 to-purple-500`}
+    >
+      <div className="w-full flex justify-start items-center max-w-7xl mx-5">
+        <Link
+          to="/"
+          className="flex items-center gap-2"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
+          {/*aquí va el logo */}
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <p className="text-slate-950 text-[18px] font-bold cursor-pointer">
+            GPO50-TLN
+          </p>
+        </Link>
+
+        <ul className="list-none px-10 hidden sm:flex flex-row gap-10">
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className="text-slate-950 hover:text-white transition ease-in-out delay-50 duration-300 text-[18px] font-bold cursor-pointer "
+            >
+              <a href={`/#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
+
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <img
+            src={toggle ? close : menu}
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            onClick={() => setToggle(!toggle)}
+          />
+
+          <div
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 bg-gradient-to-r from-purple-500 to-violet-500 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className="list-none flex justify-end items-start flex-col gap-4">
+              {navLinks.map((link) => (
+                <li
+                  key={link.id}
+                  className={`text-slate-950 hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(link.title);
+                  }}
+                >
+                  <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
 }
