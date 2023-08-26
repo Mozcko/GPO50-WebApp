@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -10,7 +10,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={` w-full flex items-start py-5 fixed top-0 z-20 bg-gradient-to-r from-violet-600 to-purple-500`}
+      className='w-full flex items-start py-3 fixed top-0 z-20 bg-gradient-to-r from-violet-600 to-purple-500'
     >
       <div className="w-full flex justify-start items-center max-w-7xl mx-5">
         <Link
@@ -22,7 +22,7 @@ export function Navbar() {
         >
           {/*aquí va el logo */}
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-slate-950 text-[18px] font-bold cursor-pointer">
+          <p className="text-indigo-50 text-[18px] font-bold cursor-pointer">
             GPO50-TLN
           </p>
         </Link>
@@ -31,7 +31,7 @@ export function Navbar() {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className="text-slate-950 hover:text-white transition ease-in-out delay-50 duration-300 text-[18px] font-bold cursor-pointer "
+              className="hover:text-slate-800 text-indigo-50 transition ease-in-out delay-50 duration-300 text-[18px] font-bold cursor-pointer "
             >
               <a href={`/#${link.id}`}>{link.title}</a>
             </li>
@@ -55,7 +55,7 @@ export function Navbar() {
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`text-slate-950 hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
+                  className='hover:text-slate-800 text-indigo-50 font-poppins font-medium cursor-pointer text-[16px]'
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);

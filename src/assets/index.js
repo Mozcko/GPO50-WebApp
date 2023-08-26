@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import menu from './menu.webp';
 import close from './close.webp';
 
