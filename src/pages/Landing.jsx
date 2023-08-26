@@ -1,6 +1,5 @@
 import React from 'react'
 import { Toaster } from 'react-hot-toast'
-import { Tilt } from 'react-tilt'
 
 import { 
     Hero,
@@ -14,7 +13,9 @@ import {
 export function Landing() {
   return (
     <div>
+      <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <Hero />
+      </div>
         <Secciones />
         <Conocenos />
         <AboutUs />
