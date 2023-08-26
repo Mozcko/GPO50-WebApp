@@ -6,6 +6,7 @@ import { Contacto } from "./Contacto";
 import { Encuentranos } from "./Encuentranos";
 import { Conocenos } from "./Conocenos";
 import { Footer } from "./Footer";
+import { WhatsApp } from "./WhatsApp";
 
 export { 
     Hero, 
@@ -16,4 +17,5 @@ export {
     Encuentranos, 
     Conocenos,
     Footer,
+    WhatsApp,
 };

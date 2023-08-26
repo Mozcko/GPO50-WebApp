@@ -6,6 +6,7 @@ import { Manada } from "./pages/Manada"
 import { Tropa } from "./pages/Tropa";
 import { Comunidad } from "./pages/Comunidad"
 import { Clan } from "./pages/Clan"
+import { WhatsApp } from "./components";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="/comunidad" element={<Comunidad />} />
           <Route path="/clan" element={<Clan />} />
         </Routes>
-
+        <WhatsApp />
         <Footer />
       </div>
     </BrowserRouter>
