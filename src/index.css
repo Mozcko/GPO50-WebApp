@@ -5,7 +5,7 @@
 .bg-image {
   width: 100svw;
   height: 65svh;
-  background-image: url('/src/assets/herobg.jpeg');
+  background-image: url('/src/assets/herobg.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
