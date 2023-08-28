@@ -22,8 +22,16 @@ export default {
         "clan-100": "#cb0f22a2"
       },
 
+      backgroundColor: {
+        "bg-manada": "#ffb711",
+        "bg-tropa": "#00712e",
+        "bg-comunidad": "#004cac",
+        "bg-clan": "#cb0f22",
+        "bg-consejo": "#5b2c93",
+      },
+
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.jpeg')",
+        "hero-pattern": "url('/src/assets/herobg.jpg')",
       },
     },
   },

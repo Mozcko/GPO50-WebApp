@@ -10,20 +10,24 @@ export const secciones = [
         title: "manada",
         logo: logo_manada,
         page: Manada,
+        color: "bg-manada",
     },
     {
         title: "tropa",
         logo: logo_tropa,
         page: Tropa,
+        color: "bg-tropa",
     },
     {
         title: "comunidad",
         logo: logo_caminantes,
         page: Comunidad,
+        color: "bg-comunidad",
     },
     {
         title: "clan",
         logo: logo_clan,
         page: Clan,
-    }
+        color: "bg-clan",
+    },
 ];
