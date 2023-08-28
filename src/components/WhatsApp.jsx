@@ -8,7 +8,7 @@ export function WhatsApp() {
     <Link
       to=""
       target="_blank"
-      className="fixed w-[60px] h-[60px] bg-green-500 bottom-[40px] right-[40px] z-40 text-white text-[30px] rounded-full text-center shadow-sm"
+      className="fixed w-[60px] h-[60px] bg-green-500 bottom-[85px] right-[10px] z-40 text-white text-[30px] rounded-full text-center shadow-sm"
     >
       <FontAwesomeIcon className="mt-[16px]" icon={faWhatsapp} />
     </Link>

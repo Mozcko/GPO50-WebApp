@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { secciones } from "../constants";
 import { fadeIn, staggerContainer } from "../utils/motion";
-import { styles } from "../styles";
 
 const Card = ({ index, title, logo, page, color }) => {
   return (
@@ -17,12 +16,12 @@ const Card = ({ index, title, logo, page, color }) => {
         }}
         className={`${color} max-w-sm rounded-lg shadow`}
       >
-        <Link className="relative w-full h-[230px]"
+        <Link className="relative"
         to={`/${title}`}>
           <img
             src={logo}
             alt={title}
-            className="p-1 w-full h-[500px] object-cover"
+            className="p-1 w-full h-[400px]"
           />
         </Link>
       </Tilt>
@@ -39,7 +38,7 @@ export function Secciones() {
       viewport={{ once: true, amount: 0.25 }}
       className='mx-auto relative z-0'
     >
-      <div className="mt-20 flex flex-wrap justify-center gap-5">
+      <div className="mt-10 flex flex-wrap justify-center gap-5 sm:gap-20">
         {secciones.map((seccion, index) => (
           <Card key={seccion.title} index={index} {...seccion} />
         ))}

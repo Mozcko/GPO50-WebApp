@@ -9,9 +9,9 @@ import {
 
 export function Footer() {
   return (
-    <footer className="w-full items-start py-3 fixed bottom-0 z-20 bg-gradient-to-r from-gray-400 to-slate-600">
-      <div className="w-full flex justify-start items-center max-w-7xl mx-5">
-        <p className="text-slate-800 mx-5 font-bold text-lg">
+    <footer className="w-full py-3 bg-gradient-to-r to-gray-400 from-slate-600">
+      <div className="w-full flex justify-start items-center">
+        <p className="text-indigo-50 mx-5 font-bold text-lg">
           síguenos en nuestras redes sociales:{" "}
         </p>
         <Link

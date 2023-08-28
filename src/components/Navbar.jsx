@@ -10,7 +10,7 @@ export function Navbar() {
 
   return (
     <nav
-      className='w-full flex items-start py-3 fixed top-0 z-20 bg-gradient-to-r from-violet-600 to-purple-500'
+      className='w-full fixed flex items-start py-3 mt-0 top-0 z-20 bg-gradient-to-r from-violet-600 to-purple-500'
     >
       <div className="w-full flex justify-start items-center max-w-7xl mx-5">
         <Link
