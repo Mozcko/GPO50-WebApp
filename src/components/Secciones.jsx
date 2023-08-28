@@ -38,7 +38,7 @@ export function Secciones() {
       viewport={{ once: true, amount: 0.25 }}
       className='mx-auto relative z-0'
     >
-      <div className="mt-10 flex flex-wrap justify-center gap-5 sm:gap-20">
+      <div className="mt-10 flex flex-wrap justify-center gap-5 sm:gap-32">
         {secciones.map((seccion, index) => (
           <Card key={seccion.title} index={index} {...seccion} />
         ))}

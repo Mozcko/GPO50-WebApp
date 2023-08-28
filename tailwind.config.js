@@ -29,10 +29,6 @@ export default {
         "bg-clan": "#cb0f22",
         "bg-consejo": "#5b2c93",
       },
-
-      backgroundImage: {
-        "hero-pattern": "url(/src/assets/herobg.jpg)",
-      },
     },
   },
   plugins: [],
