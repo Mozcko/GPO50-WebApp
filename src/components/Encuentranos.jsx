@@ -21,7 +21,7 @@ function Map() {
 
 export function Encuentranos() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBHllpIeSURNYwaR429WXnp65pVpw2Fd3U",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
   });
 
   if (!isLoaded) {
