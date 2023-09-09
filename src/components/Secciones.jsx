@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { secciones } from "../constants";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
-const Card = ({ index, title, logo, page, color }) => {
+const Card = ({ index, title, logo, color }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt

@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import { motion } from "framer-motion";
 
-import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
+import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 
 function Map() {
@@ -21,7 +21,7 @@ function Map() {
 
 export function Encuentranos() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+    googleMapsApiKey: "AIzaSyBHllpIeSURNYwaR429WXnp65pVpw2Fd3U",
   });
 
   if (!isLoaded) {
@@ -37,12 +37,15 @@ export function Encuentranos() {
       className="mx-auto relative z-0"
       id="encuentranos"
     >
-      <motion.div variants={textVariant()}>
-        <p>Donde puedes encontrarnos?</p>
+      <motion.div variants={textVariant()} className="mx-10 overflow-hidden">
+        <p className={styles.sectionHeadText}>¿Donde puedes encontrarnos?</p>
       </motion.div>
-      <div className="max-w-4xl mx-auto">
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="max-w-4xl mx-auto overflow-hidden"
+      >
         <Map />
-      </div>
+      </motion.div>
     </motion.section>
   );
 }
